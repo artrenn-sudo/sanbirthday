@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>🎂 Happy Birthday Saniuoi 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom right, #ffe1ec, #ffeebe);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #ff4081;
+      text-shadow: 2px 2px white;
+      animation: bounce 1.5s infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .message-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      max-width: 700px;
+      text-align: center;
+      font-size: 1.15rem;
+      color: #333;
+      position: relative;
+      animation: sparkle 3s ease-in-out infinite;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { box-shadow: 0 0 10px #ff4081; }
+      50% { box-shadow: 0 0 25px #ffd700; }
+    }
+
+    .avatar-wrapper {
+      margin-top: 20px;
+      width: 160px;
+      height: 160px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .floating-img {
+      position: absolute;
+      width: 80px;
+      animation: floatUp 12s linear infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-150vh) scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    .message-line {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: appear 1s ease forwards;
+      font-weight: bold;
+      color: #ff4081;
+      text-shadow: 1px 1px white;
+      margin: 12px 0;
+    }
+
+    .message-line:nth-child(1) { animation-delay: 0.5s; }
+    .message-line:nth-child(2) { animation-delay: 2s; }
+    .message-line:nth-child(3) { animation-delay: 3.5s; }
+    .message-line:nth-child(4) { animation-delay: 5s; }
+
+    @keyframes appear {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎂 háp pi sinh nhat nha SANIUOI 🎈</h1>
+
+  <div class="message-container">
+    <div class="message-line">12/05 là một ngày thật đặc biệt,</div>
+    <div class="message-line">Bởi vì có một người dễ thương xuất hiện trên thế giới này 💖</div>
+    <div class="message-line">Chúc San luôn vui vẻ và cute 🍰🎉</div>
+    <div class="message-line">như chimcanhcut ... 🐧 </div>
+
+    <div class="avatar-wrapper">
+      <img src="https://imgur.com/dAkmk1G.png" alt="Cute Penguin" class="avatar">
+    </div>
+  </div>
+
+  <!-- Thay hiệu ứng bằng hình ảnh mới -->
+  <img class="floating-img" src="https://imgur.com/NTUb9FW.png" style="left: 10%; animation-delay: 3s;">
+  <img class="floating-img" src="https://i.imgur.com/VejfWuN.png" style="left: 30%; animation-delay: 1s;">
+  <img class="floating-img" src="https://imgur.com/NTUb9FW.png" style="left: 50%; animation-delay: 0s;">
+  <img class="floating-img" src="https://i.imgur.com/VejfWuN.png" style="left: 70%; animation-delay: 2s;">
+  <img class="floating-img" src="https://imgur.com/NTUb9FW.png" style="left: 90%; animation-delay: 4s;">
+
+  <!-- Nhạc nền -->
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/fuejfz.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ nhạc nền.
+  </audio>
+</body>
+</html>
